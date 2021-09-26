@@ -1,0 +1,22 @@
+[core]
+	excludesfile = /Users/jayanpraveen/.gitignore_global
+[user]
+	name = Jayan Praveen
+	email = 59351104+jayanpraveen@users.noreply.github.com
+	signingkey = F8799B61BB5A70CE
+[commit]
+	template = /Users/jayanpraveen/.stCommitMsg
+	gpgsign = true
+[color]
+	ui = auto
+[hub]
+	protocol = https
+[init]
+	defaultBranch = main
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

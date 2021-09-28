@@ -10,4 +10,8 @@ set wildmenu
 set wildmode=list:longest
 set hlsearch
 set ignorecase
+set ruler
+set ai
+set ru
+set hlsearch
 colorscheme gotham

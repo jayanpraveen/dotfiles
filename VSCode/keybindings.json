@@ -1,0 +1,21 @@
+[
+  {
+    "key": "alt+cmd+n",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettings",
+    "args": {
+      "openToSide": true
+    }
+  }
+]

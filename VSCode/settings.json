@@ -96,7 +96,7 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-
+  
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-1.8",
@@ -105,7 +105,7 @@
     },
     {
       "name": "JavaSE-11",
-      "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home",
       "default": true
     }
   ],

@@ -11,7 +11,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bi/Users/jayanpraveen n:$PATH"
 
 # java 11
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home:"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home:"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home:"
 export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # zsh syntax highlighting 
@@ -42,6 +43,9 @@ node() {
 
 # -----< alias >-----
 
+# installed JVMs4
+alias jvms="/usr/libexec/java_home -V"
+
 # python
 alias py="python3"
 
@@ -49,7 +53,7 @@ alias py="python3"
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 # opens this file 
-alias zrc="vim ~/.zshrc"
+alias zrc="mvim ~/.zshrc"
 
 # django
 alias pmm="python3 manage.py makemigrations && python3 manage.py migrate"

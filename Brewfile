@@ -19,6 +19,7 @@ brew "gradle"
 brew "grep"
 brew "httpie"
 brew "maven"
+brew "act"
 brew "nmap"
 brew "nvm"
 brew "rabbitmq", restart_service: true

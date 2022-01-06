@@ -1,5 +1,6 @@
 {
-  // java build process
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
   "java.trace.server": "verbose",
   "better-comments.multilineComments": true,
   "explorer.compactFolders": true,
@@ -13,6 +14,7 @@
   "workbench.editor.decorations.badges": true,
   "update.mode": "manual",
   "explorer.confirmDelete": false,
+  "explorer.sortOrder": "type",
   "editor.fontFamily": "'FiraCode-Retina', Menlo, 'Courier New', monospace",
   "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
@@ -35,81 +37,56 @@
   "workbench.iconTheme": "material-icon-theme",
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.cursorStyle": "line",
+  "editor.wordWrapColumn": 120,
   "editor.insertSpaces": false,
   "editor.fontSize": 16,
   "editor.wordWrap": "on",
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "workbench.colorTheme": "Bearded Theme Arc",
   "emmet.showSuggestionsAsSnippets": true,
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python.defaultInterpreterPath": "/usr/local/opt/python@3.10/bin/python3",
   "redhat.telemetry.enabled": false,
-  "window.zoomLevel": -1,
-  "editor.tokenColorCustomizations": {
-    "comments": "#34e621",
-    "[Bearded Theme Arc]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "keyword.operator",
-            "punctuation.terminator",
-            "punctuation.accessor",
-            "punctuation.separator"
-          ],
-          "settings": {
-            "foreground": "#00FFFF"
-          }
-        }
-      ]
-    },
-    "textMateRules": [
-      {
-        "scope": [
-          "punctuation.terminator.java",
-          "punctuation.bracket.angle.java"
-        ],
-        "settings": {
-          "foreground": "#8de43b"
-        }
-      }
-    ]
-  },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode":"basic",
+  "svelte.enable-ts-plugin": true,
+  "thunder-client.codeSnippetLanguage": "cs-httpclient",
+  "diffEditor.ignoreTrimWhitespace": false,
 
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
 
+  "gopls": {
+    "build.experimentalWorkspaceModule": true
+  },
+
+  "[svelte]":{
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
-
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-1.8",
-      "path": "/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home",
-      // "default": true
-    },
-    {
-      "name": "JavaSE-11",
-      "path": "/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home",
-      "default": true
-    }
-  ],
-  
+  "java.home":"/Users/jayanpraveen/.sdkman/candidates/java/current",
+
   // lombok support
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jayanpraveen/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   
@@ -164,7 +141,36 @@
     "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  }
+  },
 
+  "editor.tokenColorCustomizations": {
+    "comments": "#34e621",
+    "[Bearded Theme Arc]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.operator",
+            "punctuation.terminator",
+            "punctuation.accessor",
+            "punctuation.separator"
+          ],
+          "settings": {
+            "foreground": "#00FFFF"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": [
+          "punctuation.terminator.java",
+          "punctuation.bracket.angle.java"
+        ],
+        "settings": {
+          "foreground": "#8de43b"
+        }
+      }
+    ]
+  },  
+  "window.zoomLevel": -1
 }
-

@@ -5,15 +5,16 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 # postgres 
 export PATH="/Applications/Postgres.app/Contents/Versions/13/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
 # ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bi/Users/jayanpraveen n:$PATH"
 
-# java 11
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home:"
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home:"
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# GO
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 
 # zsh syntax highlighting 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -43,8 +44,7 @@ node() {
 
 # -----< alias >-----
 
-# installed JVMs4
-alias jvms="/usr/libexec/java_home -V"
+alias c="code ."
 
 # python
 alias py="python3"
@@ -59,7 +59,13 @@ alias zrc="mvim ~/.zshrc"
 alias pmm="python3 manage.py makemigrations && python3 manage.py migrate"
 alias pmr="python3 manage.py runserver 0.0.0.0:8000"
 
+# go
+alias gor="go run ."
+
 # -----< oh-my-zsh >-----
+
+export CLICOLOR=1
+export TERM=xterm-256color
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -104,3 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"

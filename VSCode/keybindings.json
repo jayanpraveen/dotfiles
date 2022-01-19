@@ -17,5 +17,9 @@
     "args": {
       "openToSide": true
     }
+  },
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.terminal.moveToEditor"
   }
 ]

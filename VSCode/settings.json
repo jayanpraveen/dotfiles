@@ -49,7 +49,7 @@
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode":"basic",
   "svelte.enable-ts-plugin": true,
-  "thunder-client.codeSnippetLanguage": "cs-httpclient",
+  "thunder-client.codeSnippetLanguage": "curl",
   "diffEditor.ignoreTrimWhitespace": false,
 
   "emmet.includeLanguages": {
@@ -171,6 +171,6 @@
         }
       }
     ]
-  },  
+  },
   "window.zoomLevel": -1
 }

@@ -11,10 +11,13 @@ export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bi/Users/jayanpraveen n:$PATH"
 
-# GO
+# Go
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
+
+# firefox
+export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 
 # zsh syntax highlighting 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

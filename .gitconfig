@@ -3,7 +3,7 @@
 [user]
 	name = Jayan Praveen
 	email = 59351104+jayanpraveen@users.noreply.github.com
-	signingkey = F8799B61BB5A70CE
+	signingkey = 31B3D80E69054D08
 [commit]
 	template = /Users/jayanpraveen/.stCommitMsg
 	gpgsign = true

@@ -7,10 +7,6 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/13/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
-# ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/3.0.0/bi/Users/jayanpraveen n:$PATH"
-
 # Go
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -32,20 +28,24 @@ COMPLETION_WAITING_DOTS="true"
 
 # lazy load node
 lazy_load_nvm() {
-  echo "✨ staring nvm..."
+  echo "staring nvm..."
   unset -f node
   export NVM_DIR=~/.nvm
   [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 }
 
 node() {
-  echo "✨ staring node..."
+  echo "staring node..."
   lazy_load_nvm
   node $@
 }
 
 
 # -----< alias >-----
+
+function port () { lsof -i :"$*" }
+
+alias ip="ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 alias c="code ."
 
@@ -64,6 +64,9 @@ alias pmr="python3 manage.py runserver 0.0.0.0:8000"
 
 # go
 alias gor="go run ."
+
+# etcd
+alias et="etcdctl"
 
 # -----< oh-my-zsh >-----
 

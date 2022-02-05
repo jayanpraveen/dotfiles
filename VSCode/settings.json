@@ -50,7 +50,6 @@
   "python.analysis.typeCheckingMode":"basic",
   "svelte.enable-ts-plugin": true,
   "thunder-client.codeSnippetLanguage": "curl",
-  "diffEditor.ignoreTrimWhitespace": false,
 
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -172,5 +171,9 @@
       }
     ]
   },
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }

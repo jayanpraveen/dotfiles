@@ -47,7 +47,7 @@
   "python.defaultInterpreterPath": "/usr/local/opt/python@3.10/bin/python3",
   "redhat.telemetry.enabled": false,
   "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode":"basic",
+  "python.analysis.typeCheckingMode": "basic",
   "svelte.enable-ts-plugin": true,
   "thunder-client.codeSnippetLanguage": "curl",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -60,7 +60,7 @@
     "build.experimentalWorkspaceModule": true
   },
 
-  "[svelte]":{
+  "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[typescript]": {
@@ -87,12 +87,12 @@
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  
+
   "java.jdt.ls.java.home": "/Users/jayanpraveen/.sdkman/candidates/java/current",
-  
+
   // lombok support
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jayanpraveen/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-  
+
   "code-runner.executorMap": {
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -175,6 +175,5 @@
       }
     ]
   },
- 
   "window.zoomLevel": -1
 }

@@ -68,6 +68,8 @@ alias gor="go run ."
 # etcd
 alias et="etcdctl"
 
+alias cdd="cd desktop"
+
 # -----< oh-my-zsh >-----
 
 export CLICOLOR=1
@@ -121,3 +123,12 @@ source $ZSH/oh-my-zsh.sh
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jayanpraveen/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jayanpraveen/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jayanpraveen/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jayanpraveen/Desktop/google-cloud-sdk/completion.zsh.inc'; fi

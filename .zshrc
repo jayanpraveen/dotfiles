@@ -56,7 +56,7 @@ alias py="python3"
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 # opens this file 
-alias zrc="mvim ~/.zshrc"
+alias zrc="vim ~/.zshrc"
 
 # django
 alias pmm="python3 manage.py makemigrations && python3 manage.py migrate"

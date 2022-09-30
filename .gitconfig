@@ -1,5 +1,9 @@
+[alias]
+	# Show the user email for the current repository.
+	whoami = config user.email
 [core]
 	excludesfile = /Users/jayanpraveen/.gitignore_global
+	attributesfile = ~/.gitattributes
 [user]
 	name = Jayan Praveen
 	email = 59351104+jayanpraveen@users.noreply.github.com
@@ -7,8 +11,24 @@
 [commit]
 	template = /Users/jayanpraveen/.stCommitMsg
 	gpgsign = true
+[color "branch"]
+
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [color]
-	ui = auto
+	ui = true
 [hub]
 	protocol = https
 [init]
@@ -20,3 +40,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[format]
+	pretty = oneline
+[apply]
+	# Detect whitespace errors when applying a patch.
+	whitespace = fix

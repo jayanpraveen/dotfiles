@@ -42,7 +42,7 @@
   "editor.fontSize": 16,
   "editor.wordWrap": "on",
   "editor.unicodeHighlight.invisibleCharacters": false,
-  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.colorTheme": "GitHub Dark Default",
   "emmet.showSuggestionsAsSnippets": true,
   "python.defaultInterpreterPath": "/usr/local/opt/python@3.10/bin/python3",
   "redhat.telemetry.enabled": false,
@@ -50,7 +50,6 @@
   "python.analysis.typeCheckingMode": "basic",
   "svelte.enable-ts-plugin": true,
   "thunder-client.codeSnippetLanguage": "curl",
-  "diffEditor.ignoreTrimWhitespace": false,
 
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -91,7 +90,7 @@
   "java.jdt.ls.java.home": "/Users/jayanpraveen/.sdkman/candidates/java/current",
 
   // lombok support
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jayanpraveen/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jayanpraveen/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
 
   "code-runner.executorMap": {
     "javascript": "node",
@@ -124,7 +123,8 @@
     "applescript": "osascript",
     "clojure": "lein exec",
     "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    // "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "rust": "cargo run $dir/$fileName",
     "racket": "racket",
     "scheme": "csi -script",
     "ahk": "autohotkey",
@@ -175,5 +175,8 @@
       }
     ]
   },
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "window.zoomLevel": -1
 }

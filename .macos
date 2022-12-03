@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Close any open System Preferences panes, to prevent them from overriding
+o
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -118,7 +119,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 
-
+_ pmset -a disablesleep 0
 
 for app in "Firefox" \
 	"cfprefsd" \

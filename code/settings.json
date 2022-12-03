@@ -1,7 +1,7 @@
 {
+  "java.trace.server": "verbose",
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
-  "java.trace.server": "verbose",
   "better-comments.multilineComments": true,
   "explorer.compactFolders": true,
   "editor.suggest.preview": true,
@@ -50,15 +50,12 @@
   "python.analysis.typeCheckingMode": "basic",
   "svelte.enable-ts-plugin": true,
   "thunder-client.codeSnippetLanguage": "curl",
-
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   "gopls": {
     "build.experimentalWorkspaceModule": true
   },
-
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -86,12 +83,22 @@
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-
   "java.jdt.ls.java.home": "/Users/jayanpraveen/.sdkman/candidates/java/current",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/Users/jayanpraveen/.sdkman/candidates/java/8.0.312-tem"
+      // "default": true
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "/Users/jayanpraveen/.sdkman/candidates/java/11.0.13-tem",
+      "default": true
+    }
+  ],
 
   // lombok support
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jayanpraveen/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-
   "code-runner.executorMap": {
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -145,7 +152,6 @@
     "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
-
   "editor.tokenColorCustomizations": {
     "comments": "#34e621",
     "[Bearded Theme Arc]": {

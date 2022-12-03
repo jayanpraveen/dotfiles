@@ -1,32 +1,47 @@
 tap "dnote/dnote"
+tap "gromgit/fuse"
 tap "hashicorp/tap"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
+tap "yt-dlp/taps"
 # Run your GitHub Actions locally 🚀
 brew "act"
 # Automatic configure script builder
 brew "autoconf"
 # Core application library for C
 brew "glib"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
+# X.Org: Interface to the X Window System protocol
+brew "libxcb"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Tool for service discovery, monitoring and configuration
+brew "consul"
+# Distributed search & analytics engine
+brew "elasticsearch@6"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
 # Programming language for highly scalable real-time systems
 brew "erlang"
+# Key value store for shared configuration and service discovery
+brew "etcd"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
+# Validating, recursive, caching DNS resolver
+brew "unbound", restart_service: true
 # GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
-# Validating, recursive, caching DNS resolver
-brew "unbound", restart_service: true
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -35,14 +50,14 @@ brew "gradle"
 brew "grep"
 # Improved top (interactive process viewer)
 brew "htop"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Configurable static site generator
 brew "hugo"
+# Analytics and search dashboard for Elasticsearch
+brew "kibana"
 # Postgres C API library
 brew "libpq"
 # Java-based project management
@@ -53,94 +68,91 @@ brew "neofetch"
 brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node", link: false
 # Manage multiple Node.js versions
 brew "nvm"
-# General-purpose scripting language
-brew "php", link: false
+# Open source distributed and RESTful search engine
+brew "opensearch"
+# Open source visualization dashboards for OpenSearch
+brew "opensearch-dashboards"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Messaging broker
-brew "rabbitmq", restart_service: true
+brew "rabbitmq"
 # Persistent key-value database, with built-in net interface
 brew "redis", restart_service: true
 # Rust toolchain installer
 brew "rustup-init"
-# Implementation of Java Servlet and JavaServer Pages
-brew "tomcat", restart_service: true
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# DNS privacy enabled stub resolver service based on getdns
+brew "stubby"
+# Simplified and community-driven man pages
+brew "tldr"
 # Anonymizing overlay network for TCP
-brew "tor", restart_service: true
+brew "tor"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language for application scale JavaScript development
+brew "typescript"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# Centralized server for distributed coordination of services
+brew "zookeeper"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Simple command-line notebook for programmers
 brew "dnote/dnote/dnote"
-# Everything you need to get started with Heroku
-brew "heroku/brew/heroku"
+# High-performance, schema-free, document-oriented database
+brew "mongodb/brew/mongodb-community@4.2"
 # This package contains standard utilities for interacting with MongoDB.
 brew "mongodb/brew/mongodb-database-tools"
-# Transfer files from and to an Android smartphone
-cask "android-file-transfer"
-cask "background-music"
-# Tool to flash OS images to SD cards & USB drives
-cask "balenaetcher"
+# A youtube-dl fork with additional features and fixes
+brew "yt-dlp/taps/yt-dlp"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Free and open-source web browser
 cask "chromium"
+# Managed desktop virtualization solution
+cask "citrix-workspace"
 # Server and cloud storage browser
 cask "cyberduck"
-# App to build and share containerized applications and microservices
-cask "docker"
+# Matrix collaboration client
+cask "element"
+# Desktop client for GitHub repositories
+cask "github"
+# Decentralised instant messenger and softphone
+cask "jami"
 # Web browser
-cask "firefox"
+cask "librewolf"
+# File system integration
+cask "macfuse"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Web browser
-cask "google-chrome"
-# Tools to protect your emails and files
-cask "gpg-suite"
-# Java IDE by JetBrains
-cask "intellij-idea"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Free and open-source painting and sketching program
-cask "krita"
-# Office suite
-cask "libreoffice"
-# Text editor
-cask "macvim"
-# Explore and manipulate your MongoDB data
-cask "mongodb-compass"
-# Visual tool to design, develop and administer MySQL servers
-cask "mysqlworkbench"
-# Administration and development platform for PostgreSQL
-cask "pgadmin4"
+cask "opera"
 # Collaboration platform for API development
 cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
-# GUI for streamlined Redis application development
-cask "redisinsight"
-# Music streaming service
-cask "spotify"
-# Desktop client for Telegram messenger
-cask "telegram-desktop"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# News reader with flexible settings
+cask "raven-reader"
+# Team communication and collaboration software
+cask "slack"
+# Real time file synchronization software
+cask "syncthing"
 # Web browser focusing on security
 cask "tor-browser"
-# Open-source code editor
-cask "visual-studio-code"
-# Multimedia player
-cask "vlc"
-# Desktop client for WhatsApp
-cask "whatsapp"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
